@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Buyer Pre-Qualification</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Buyer Pre-Qualification Form</h1>
+    <form id="prequalForm">
+      <label>Annual Income ($):</label>
+      <input type="number" id="income" required/>
+
+      <label>Credit Score:</label>
+      <input type="number" id="creditScore" min="300" max="850" required/>
+
+      <label>Monthly Debt Payments ($):</label>
+      <input type="number" id="debt" required/>
+
+      <label>Down Payment ($):</label>
+      <input type="number" id="downPayment" required/>
+
+      <label>Estimated Home Price ($):</label>
+      <input type="number" id="homePrice" required/>
+
+      <button type="submit">Check Pre-Qualification</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
